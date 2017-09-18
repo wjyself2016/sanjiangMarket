@@ -1,0 +1,260 @@
+@charset "UTF-8";
+body, p, h1, h2, h3, h4, h5, h6, ul, dl, dd, td, input, fieldset, textarea, option {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+img {
+  border: none;
+  vertical-align: top;
+}
+
+a, input {
+  outline: none;
+}
+
+h1, h2, h3, h4, h5, h6, b, strong {
+  font-weight: 100;
+}
+
+i, em {
+  font-style: normal;
+}
+
+body {
+  font: 12px "Microsoft YaHei";
+}
+
+.clear:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.content {
+  width: 1200px;
+  margin: 0 auto;
+}
+.content .nav {
+  height: 40px;
+  width: 1200px;
+  line-height: 40px;
+}
+.content .nav ul {
+  overflow: hidden;
+}
+.content .nav ul li {
+  float: left;
+  height: 40px;
+  padding-right: 18px;
+  font-family: 宋体;
+}
+.content .nav ul li a {
+  color: #666666;
+}
+.content .goods_data {
+  width: 1200px;
+  overflow: hidden;
+}
+.content .goods_data .left {
+  float: left;
+  width: 430px;
+  height: 521px;
+}
+.content .goods_data .left .small_img {
+  height: 400px;
+  width: 400px;
+  padding: 14px;
+  border: 1px solid #EEEEEE;
+  position: relative;
+}
+.content .goods_data .left .small_img img {
+  height: 400px;
+  width: 400px;
+}
+.content .goods_data .left .small_img .big_img {
+  height: 428px;
+  width: 428px;
+  border: 1px solid #EEEEEE;
+  position: absolute;
+  left: 428px;
+  top: -1px;
+  overflow: hidden;
+  display: none;
+}
+.content .goods_data .left .small_img .big_img img {
+  width: 800px;
+  height: 800px;
+  position: absolute;
+}
+.content .goods_data .left .small_img .drag {
+  top: -1px;
+  left: -1px;
+  width: 214px;
+  height: 214px;
+  position: absolute;
+  border: 1px solid #ccc;
+  background: rgba(0, 0, 0, 0.1);
+  display: none;
+}
+.content .goods_data .left .kind {
+  height: 62px;
+  width: 430px;
+  padding-top: 29px;
+}
+.content .goods_data .left .kind .left_item {
+  float: left;
+  width: 18px;
+  height: 28px;
+  margin: 17px 0;
+  background: url(../img/spriteSheet/items.png) -47px -201px no-repeat;
+}
+.content .goods_data .left .kind .kind_list {
+  float: left;
+  width: 360px;
+  height: 62px;
+  padding: 0 17px;
+}
+.content .goods_data .left .kind .kind_list ul {
+  overflow: hidden;
+}
+.content .goods_data .left .kind .kind_list ul li {
+  cursor: pointer;
+  float: left;
+  width: 54px;
+  height: 54px;
+  padding: 3px;
+  border: 1px solid #e53b34;
+  margin-right: 10px;
+}
+.content .goods_data .left .kind .kind_list ul li img {
+  width: 54px;
+  height: 54px;
+}
+.content .goods_data .left .kind .right_item {
+  float: left;
+  width: 18px;
+  height: 28px;
+  margin: 17px 0;
+  background: url(../img/spriteSheet/items.png) 0 -163px no-repeat;
+}
+.content .goods_data .center {
+  float: left;
+  width: 500px;
+  height: 380px;
+  margin: 0 50px 10px 30px;
+  background: blueviolet;
+}
+.content .goods_data .center .itemname {
+  width: 500px;
+  height: 78px;
+}
+.content .goods_data .center .itemname h1 {
+  font-size: 16px;
+  color: #666;
+  line-height: 30px;
+  font-weight: bold;
+}
+.content .goods_data .center .itemprice {
+  width: 474px;
+  height: 60px;
+  padding: 15px;
+  background: #ffedde;
+}
+.content .goods_data .center .itemprice .price {
+  float: left;
+}
+.content .goods_data .center .itemprice .price .vip {
+  color: #f03838;
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 7px;
+  display: inline-block;
+  zoom: 1;
+}
+.content .goods_data .center .itemprice .price .vip b {
+  font-size: 24px;
+  font-weight: bold;
+}
+.content .goods_data .center .itemprice .price .normal {
+  display: block;
+  font-size: 12px;
+  color: #999;
+}
+.content .goods_data .center .itemprice .price .normal b {
+  color: #666;
+  font-family: verdana;
+  font-weight: bold;
+}
+.content .goods_data .center .itemprice .share {
+  float: right;
+  width: 150px;
+  height: 19px;
+  position: relative;
+}
+.content .goods_data .center .itemprice .share .collection {
+  float: left;
+  height: 14px;
+}
+.content .goods_data .center .itemprice .share .collection i {
+  background: url(../img/spriteSheet/items.png) 0 -355px no-repeat;
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+  margin-top: 2px;
+  float: left;
+}
+.content .goods_data .center .itemprice .share .collection span {
+  float: left;
+  height: 14px;
+  line-height: 14px;
+}
+.content .goods_data .center .itemprice .share .share_box {
+  position: absolute;
+  width: 113px;
+  height: 63px;
+  background: yellow;
+  left: 86px;
+  top: 0px;
+  cursor: pointer;
+  color: #666;
+  border: 1px solid white;
+}
+.content .goods_data .center .itemprice .share .share_box .share_a {
+  width: 100px;
+  padding: 5px 0 0 12px;
+}
+.content .goods_data .center .itemprice .share .share_box .share_a i {
+  background: url(../img/spriteSheet/items.png) 0 -311px no-repeat;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  margin-right: 5px;
+}
+.content .goods_data .center .itemchoose {
+  width: 500px;
+  height: 134px;
+  padding-top: 6px;
+}
+.content .goods_data .center .buy_button {
+  width: 470px;
+  height: 38px;
+  padding: 15px;
+}
+.content .goods_data .right {
+  float: left;
+  width: 170px;
+  height: 571px;
+  background: cadetblue;
+}
