@@ -4,7 +4,7 @@ define([],function(){
 		template:function (str, data) {
 			//转化
 			str = "log(`"+str+"`)";
-			str = str.replace(/<%=(.+)%>/g, "`); log($1); log(`");
+			str = str.replace(/<%=(.+?)%>/g, "`); log($1); log(`");
 			str = str.replace(/<%(.+)%>/g, "`); $1 log(`");
 			
 			

@@ -12,45 +12,45 @@ define([],function(){
 						},
 						bottom:{
 							side:{
-								img : "../img/index/f2.jpg",
-								list1:["大米","食用油","调味品","干货"],
-								list2:["火腿肠","精选大米","挂面","橄榄油","黄桃罐头","紫菜","方便面","金华火腿","酱油"]
+								img : "../img/index/stair1-left.jpg",
+								list1:["水果","蔬菜","水产","肉禽蛋"],
+								list2:["菜","红富士","鱼","蟹","虾类","猪肉","牛肉","奶制品","蛋类","腊肠/腊肉","火腿","面食"]
 							},
 							center:[
 								[
-									{img:"../img/index/center1.jpg",name:"金龙鱼黄金比例调和油5L",price:"￥59.90"}
+									{img:"../img/index/1f-1-1.jpg",name:"紫甘薯580-620g/份",price:"￥6.80",listId:2}
 								],
 								[
-									{img:"../img/index/center1.jpg",name:"金龙鱼黄金比例调和油5L",price:"￥59.90"},
-								 	{img:"../img/index/center1.jpg",name:"金龙鱼黄金比例调和油5L",price:"￥59.90"}
+									{img:"../img/index/1f-2-1.jpg",name:"新骑士橙900-1000g/份",price:"￥10.50"},
+								 	{img:"../img/index/center1.jpg",name:"金龙鱼黄金比例调和油5L",price:"￥59.90",listId:3}
 								],
 								[
-									{img:"../img/index/center1.jpg",name:"金龙鱼黄金比例调和油5L",price:"￥59.90"},
-									{img:"../img/index/center1.jpg",name:"金龙鱼黄金比例调和油5L",price:"￥59.90"},
-									{img:"../img/index/center1.jpg",name:"金龙鱼黄金比例调和油5L",price:"￥59.90"}
-								],
-								[
-									{img:"../img/index/center1.jpg",name:"金龙鱼黄金比例调和油5L",price:"￥59.90"},
-									{img:"../img/index/center1.jpg",name:"金龙鱼黄金比例调和油5L",price:"￥59.90"},
+									{img:"../img/index/1f-3-1.png",name:"小黄鱼2条340-380g/盒",price:"￥18.60"},
 									{img:"../img/index/center1.jpg",name:"金龙鱼黄金比例调和油5L",price:"￥59.90"},
 									{img:"../img/index/center1.jpg",name:"金龙鱼黄金比例调和油5L",price:"￥59.90"}
 								],
 								[
+									{img:"../img/index/1f-4-1.jpg",name:"精品后腿肉250-280g/份",price:"￥8.60"},
 									{img:"../img/index/center1.jpg",name:"金龙鱼黄金比例调和油5L",price:"￥59.90"},
+									{img:"../img/index/center1.jpg",name:"金龙鱼黄金比例调和油5L",price:"￥59.90"},
+									{img:"../img/index/center1.jpg",name:"金龙鱼黄金比例调和油5L",price:"￥59.90"}
+								],
+								[
+									{img:"../img/index/1f-5-1.jpg",name:"五丰鲜肉包420g",price:"￥16.10"},
 									{img:"../img/index/center1.jpg",name:"金龙鱼黄金比例调和油5L",price:"￥59.90"},
 									{img:"../img/index/center1.jpg",name:"金龙鱼黄金比例调和油5L",price:"￥59.90"},
 									{img:"../img/index/center1.jpg",name:"金龙鱼黄金比例调和油5L",price:"￥59.90"},
 									{img:"../img/index/center1.jpg",name:"金龙鱼黄金比例调和油5L",price:"￥59.90"}
 								]
 							],
-							right:["../img/index/1f-1.png","../img/index/1f-2.png"]
+							right:["../img/index/stair1-right1.png","../img/index/stair1-right2.png"]
 						},
 						foot:["../img/index/foot1.jpg","../img/index/foot1.jpg"]
 					},
 					{
 						top:{
 							logo : ["2F","粮油调味"],
-							nav : ["蔬菜","水果","海鲜水产","肉禽蛋奶","日配腊味"]
+							nav : ["热门","大米","酱油","食用油","方便面","罐头食品","南北干货","杂粮"]
 						},
 						bottom:{
 							side:{
@@ -82,6 +82,15 @@ define([],function(){
 									{img:"../img/index/center1.jpg",name:"金龙鱼黄金比例调和油5L",price:"￥59.90"},
 									{img:"../img/index/center1.jpg",name:"金龙鱼黄金比例调和油5L",price:"￥59.90"},
 									{img:"../img/index/center1.jpg",name:"金龙鱼黄金比例调和油5L",price:"￥59.90"},
+									{img:"../img/index/center1.jpg",name:"金龙鱼黄金比例调和油5L",price:"￥59.90"}
+								],
+								[
+									{img:"../img/index/center1.jpg",name:"金龙鱼黄金比例调和油5L",price:"￥59.90"}
+								],
+								[
+									{img:"../img/index/center1.jpg",name:"金龙鱼黄金比例调和油5L",price:"￥59.90"}
+								],
+								[
 									{img:"../img/index/center1.jpg",name:"金龙鱼黄金比例调和油5L",price:"￥59.90"}
 								]
 							],

@@ -1,1 +1,365 @@
 @import "mixin";
+
+.body{
+    
+}
+.body_icon{
+    width:990px;
+    margin:0 auto;
+    .step{
+        width:990px;
+        height:90px;
+        .step_left{
+            float:left;
+            height:60px;
+            width:260px;
+            margin:15px 0;
+            background:url(../img/index/login-logo.png) center no-repeat;
+        }
+        .step_right{
+            float:right;
+            width:540px;
+            height:30px;
+            margin-top:25px;
+            ul{
+                overflow: hidden;
+                
+                li{
+                    float: left;
+                    width:180px;
+                    height:30px;
+                    line-height: 30px;
+                    text-align: left;
+                    font-size: 14px;
+                    font-weight: 700;
+                    background:url(../img/shopping/p_step.png) 100% 0 no-repeat #ddd;
+                    i{
+                        font-weight: 700;
+                        font-size: 16px;
+                        font-family: verdana;
+                        font-style: normal;
+                        line-height: 20px;
+                        text-align: center;
+                        width: 20px;
+                        height: 20px;
+                        display: block;
+                        float: left;
+                        background: url(../img/shopping/login-bg.png) -46px -56px no-repeat;
+                        margin: 5px 5px 5px 30px;
+                        color: #fff;
+                    }
+                    span{
+                        
+                    }
+                }
+                .step_last{
+                    background: #ddd;
+                }
+                
+                .checked_li{
+                    background: url(../img/shopping/p_step.png) 100% -90px no-repeat #f79100;
+                    color: #fff;
+                    .checked_i{
+                        background: url(../img/shopping/login-bg.png) -80px -56px no-repeat;
+                        color: #fc8;
+                    }
+                }
+            }
+        }
+    }
+    .cart_head{
+        height: 50px;
+        border-bottom: 2px solid #f03838;
+        b{
+            float: left;
+            height:45px;
+            line-height: 45px;
+            font-size: 18px;
+            font-weight: 400;
+            font-family: 微软雅黑;
+            color: #333;
+        }
+        .send_all{
+            float: left;
+            position: relative;
+            z-index: 3;
+            color: #666;
+            margin-top: 9px;
+            p{
+                float: left;
+                line-height: 26px;
+            }
+            .send_where{
+                border: 1px solid #ddd;
+                cursor: pointer;
+                padding: 0 10px;
+                height: 24px;
+                line-height: 24px;
+                position: relative;
+                float: left;
+                min-width: 40px;
+                span{
+                    margin-right: 5px;
+                    color: #666;
+                    padding-right: 5px;
+                }
+                i{
+                    margin-left: 3px;
+                    display: inline-block;
+                    background: url(../img/spriteSheet/list.png) 0 -23px no-repeat;
+                    width: 9px;
+                    height: 5px;
+                }
+            }
+        }
+        .tips{
+            margin-top: 9px;
+            margin-left: 15px;
+            border: 1px solid #f9ad40;
+            background: ivory;
+            padding: 0 10px;
+            height: 24px;
+            line-height: 24px;
+            position: relative;
+            float: left;
+        }
+        .fri{
+            color: #2272c8;
+            float: right;
+            font-size: 12px;
+            line-height: 50px;
+        }
+    }
+    .cart_body{
+        width:990px;
+        
+        .cart_all_select{
+            height: 44px;
+            line-height: 44px;
+            color: #333;
+            font-weight: 400;
+            background: #eee;
+            .h_goods{
+                width: 328px;
+                float: left;
+                label{
+                    float: left;
+                    margin-right: 75px;
+                    input{
+                        vertical-align: middle;
+                        margin-left: 15px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+            .h_price{
+                width: 110px;
+                float: left;
+                text-align: center;
+            }
+        }
+        .cart_box_all{
+            
+            .cart_box{
+                border: 1px solid #ddd;
+                margin-top: -1px;
+                height:122px;
+                .c_checkbox{
+                    width: 50px;
+                    float: left;
+                    input{
+                        float: left;
+                        margin: 50px 0 0 15px;
+                    }
+                }
+                .c_goods{
+                    width: 278px;
+                    float: left;
+                    height: 102px;
+                    margin: 10px 0;
+                    img{
+                        width: 100px;
+                        height: 100px;
+                        float: left;
+                        border: 1px solid #eee;
+                        margin: 0 8px 0 0;
+                    }
+                    p{
+                        float: left;
+                        margin-top: 18px;
+                        line-height: 22px;
+                        color: #666;
+                        width: 150px;
+                        overflow: hidden;
+                        a{
+                            line-height: 20px;
+                            display: block;
+                            color: #666;
+                        }
+                    }
+                }
+                .c_price{
+                    float: left;
+                    width: 110px;
+                    height: 60px;
+                    margin-top: 25px;
+                    position: relative;
+                    text-align: center;
+                    font-family: Verdana;
+                    color: #333;
+                    
+                    .member_price{
+                        color: #f03838;
+                    }
+                    .choose_amount{
+                        width: 68px;
+                        height: 24px;
+                        overflow: hidden;
+                        line-height: 24px;
+                        margin: 0px auto;
+                        text-align: center;
+                        a{
+                            border: 1px solid #ccc;
+                            width: 18px;
+                            height: 22px;
+                            color: #333;
+                            background: #f8f8f8;
+                            float: left;
+                            overflow: hidden;
+                            cursor: pointer;
+                        }
+                        input{
+                            width: 28px;
+                            height: 22px;
+                            line-height: 22px;
+                            float: left;
+                            border: 1px solid #ccc;
+                            text-align: center;
+                            background: #fff;
+                            color: #333;
+                        }
+                        .btn_reduce{
+                            margin-right: -1px;
+                        }
+                        .btn_add{
+                            margin-left: -1px;
+                        }
+                    }
+                    b{
+                        font-weight: bold;
+                    }
+                    a{
+                        color: #000;
+                        line-height: 25px;
+                        cursor: pointer;
+                        display: block;
+                    }
+                }
+            }
+        }
+        .cart_box_bottom{
+            
+            .bottom_up{
+                height:36px;
+                line-height: 36px;
+                overflow: hidden;
+                border-bottom: 1px solid #eee;
+                box-shadow: 0 0 3px #ccc;
+                z-index: 3;
+                position: relative;
+                background: #fff;
+                
+                .t_some{
+                    width: 650px;
+                    text-align: right;
+                    float: left;
+                    height: 36px;
+                    a{
+                        color: #3390ee;
+                        margin-left: 10px;
+                    }
+                }
+                b{
+                    width: 110px;
+                    float: left;
+                    font-family: Verdana;
+                    color: #333;
+                    text-align: center;
+                }
+                span{
+                    width: 110px;
+                    color: #aaa;
+                    float: left;
+                }
+                
+            }
+            .bottom_down{
+                z-index: 4;
+                position: relative;
+                background: #f6f6f6;
+                height: 50px;
+                margin-bottom: 20px;
+                
+                .select{
+                    float: left;
+                    line-height: 50px;
+                    color:#666666;
+                    input{
+                        margin: 0 10px;
+                            font-size: 100%;
+                            color: #999;
+                            vertical-align: middle;
+                    }
+                    a{
+                        margin-left: 15px;
+                        color:#666666;
+                        &:hover{
+                            color:#F03838;
+                        }
+                    }
+                }
+                .c_button{
+                    width: 100px;
+                    height: 50px;
+                    background: #f03838;
+                    line-height: 50px;
+                    text-align: center;
+                    font-family: 微软雅黑;
+                    font-size: 18px;
+                    color: #fff;
+                    float: right;
+                    border: 0;
+                }
+                .c_count{
+                    float: right;
+                    margin-right: 15px;
+                    text-align: right;
+                    color: #999;
+                    font-family: verdana;
+                    line-height: 22px;
+                    margin-top: 3px;
+                    overflow: hidden;
+                    i{
+                        font-style: normal;
+                        margin-right: 15px;
+                        b{
+                            color: #f03838;
+                            font-size: 14px;
+                        }
+                        strong{
+                            font-size: 16px;
+                            color: #f03838;
+                        }
+                        
+                    }
+                    p{
+                        margin-right: 15px;
+                        a{
+                            color: #3390ee;
+                        }
+                    }
+                }
+            }
+        }  
+    }
+}

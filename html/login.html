@@ -1,11 +1,54 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
-		<title>用户注册</title>
-		
-		<script data-main="../js/private/login.js" src="../js/library/require.js" ></script>
+		<title>登录-三江购物</title>
+
+		<script data-main="../js/private/login.js" src="../js/library/require.js"></script>
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/login.css" />
 	</head>
+
 	<body>
+		<div class="main">
+			<div class="logo">
+				<a href="index.html"></a>
+			</div>
+			<div class="wrap">
+				<div class="wrap_left"></div>
+				<div class="wrap_right">
+					<form class="lg_form" action="" method="get">
+						<div class="lg_title">
+							<b>用户登录</b>
+							<span>没有账号？<a href="signin.html">免费注册</a></span>
+						</div>
+						<div class="error_tip">
+							<i></i>
+							<span>用户名或密码不正确！</span>
+						</div>
+						<div class="item">
+							<input type="text" class="input" id="userName" name="username" placeholder="用户名/手机/邮箱" value="" />
+							<i class="i-phone"></i>
+						</div>
+						<div class="item">
+							<input name="password" class="input2" type="password" id="password" placeholder="请输入密码" />
+							<i class="i-psd"></i>
+						</div>
+						
+					  	<div class="password_un">
+         
+				            <label id="zddl">
+				              <input type="checkbox" id="remember-me" name="remember-me" checked="checked" />自动登录<span>公共场合请勿使用</span>
+				            </label>
+            				<a href="http://password.sanjiang.com/password.html">忘记密码？</a>
+    					</div>
+						<div class="btn-entry">登录</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div id="foot2"></div>
 	</body>
+
 </html>

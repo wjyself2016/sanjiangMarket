@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body, p, h1, h2, h3, h4, h5, h6, ul, dl, dd, td, input, fieldset, textarea, option {
   margin: 0;
   padding: 0;
@@ -39,4 +40,139 @@ body {
   clear: both;
   height: 0;
   visibility: hidden;
+}
+
+.logo {
+  width: 990px;
+  height: 60px;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+.logo a {
+  display: block;
+  height: 54px;
+  width: 260px;
+  background: url(../img/index/login-logo.png) center no-repeat;
+}
+
+.wrap {
+  width: 860px;
+  height: 350px;
+  padding: 60px 65px;
+  margin: 0 auto;
+}
+.wrap .wrap_left {
+  width: 450px;
+  height: 350px;
+  float: left;
+  background: url(../img/login/login-img.gif) center no-repeat;
+}
+.wrap .wrap_right {
+  height: 305px;
+  width: 320px;
+  float: right;
+}
+.wrap .wrap_right .lg_form {
+  height: 100%;
+  width: 100%;
+}
+.wrap .wrap_right .lg_form .lg_title {
+  height: 40px;
+  color: #999;
+  font-size: 12px;
+}
+.wrap .wrap_right .lg_form .lg_title b {
+  font-size: 22px;
+  float: left;
+  font-family: 微软雅黑;
+  font-weight: 500;
+}
+.wrap .wrap_right .lg_form .lg_title span {
+  line-height: 40px;
+  float: right;
+}
+.wrap .wrap_right .lg_form .lg_title span a {
+  color: #F03838;
+}
+.wrap .wrap_right .lg_form .error_tip {
+  height: 24px;
+  width: 318px;
+  border: 1px solid #F03838;
+  margin-bottom: 10px;
+  display: none;
+}
+.wrap .wrap_right .lg_form .error_tip i {
+  float: left;
+  background: url(../img/shopping/login-bg.png) 0 -56px no-repeat;
+  width: 16px;
+  height: 16px;
+  margin: 4px 6px 0 0;
+}
+.wrap .wrap_right .lg_form .error_tip span {
+  float: left;
+  height: 24px;
+  line-height: 24px;
+  color: #F03838;
+}
+.wrap .wrap_right .lg_form .item {
+  margin-bottom: 20px;
+  position: relative;
+}
+.wrap .wrap_right .lg_form .item input {
+  width: 268px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  height: 20px;
+  line-height: 20px;
+  padding: 10px 10px 10px 40px;
+  font-family: 微软雅黑;
+}
+.wrap .wrap_right .lg_form .item i {
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 4;
+}
+.wrap .wrap_right .lg_form .item .i-phone {
+  background: url(../img/shopping/login-bg.png) 0 0 no-repeat;
+}
+.wrap .wrap_right .lg_form .item .i-psd {
+  background: url(../img/shopping/login-bg.png) 0 -26px no-repeat;
+}
+.wrap .wrap_right .lg_form .password_un {
+  font-size: 12px;
+  color: #888;
+  overflow: hidden;
+  height: 18px;
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+.wrap .wrap_right .lg_form .password_un label {
+  float: left;
+}
+.wrap .wrap_right .lg_form .password_un label input {
+  vertical-align: middle;
+}
+.wrap .wrap_right .lg_form .password_un label span {
+  color: #F03838;
+}
+.wrap .wrap_right .lg_form .password_un a {
+  float: right;
+}
+.wrap .wrap_right .lg_form .btn-entry {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 40px;
+  font-family: 微软雅黑;
+  background: #dd1b1b;
+  overflow: hidden;
+  border: 0;
+  text-align: center;
 }

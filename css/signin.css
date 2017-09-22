@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body, p, h1, h2, h3, h4, h5, h6, ul, dl, dd, td, input, fieldset, textarea, option {
   margin: 0;
   padding: 0;
@@ -39,4 +40,201 @@ body {
   clear: both;
   height: 0;
   visibility: hidden;
+}
+
+.body_icon {
+  width: 990px;
+  height: 628px;
+  margin: 0 auto;
+}
+.body_icon .logo {
+  width: 990px;
+  height: 85px;
+}
+.body_icon .logo .reg_logo {
+  padding-top: 25px;
+}
+.body_icon .logo .reg_logo a {
+  float: left;
+  background: url(../img/index/login-logo.png) 50% no-repeat;
+  width: 260px;
+  height: 60px;
+}
+.body_icon .logo .reg_logo span {
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  font-family: Microsoft YaHei;
+  font-size: 20px;
+  color: #666;
+  margin: 10px 0 0 20px;
+}
+.body_icon .wrap {
+  width: 990px;
+  height: 543px;
+}
+.body_icon .wrap .wrap_ready {
+  height: 30px;
+  padding-top: 5px;
+  width: 990px;
+  text-align: right;
+}
+.body_icon .wrap .wrap_ready span {
+  float: right;
+  height: 20px;
+  line-height: 20px;
+}
+.body_icon .wrap .wrap_ready a {
+  height: 20px;
+  line-height: 20px;
+  float: right;
+  padding: 0 5px;
+  margin-left: 5px;
+  border-radius: 3px;
+  background: red;
+  color: #fff;
+}
+.body_icon .wrap .wrap_body {
+  width: 908px;
+  height: 426px;
+  border: 1px solid #ccc;
+  padding: 40px;
+  overflow: hidden;
+  background: #fcfcfc;
+}
+.body_icon .wrap .wrap_body .left {
+  float: left;
+}
+.body_icon .wrap .wrap_body .left .reg_item {
+  height: 40px;
+}
+.body_icon .wrap .wrap_body .left .reg_item .reg_span {
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  text-align: right;
+  padding-right: 10px;
+  float: left;
+}
+.body_icon .wrap .wrap_body .left .reg_item .reg_span span {
+  color: #F03838;
+}
+.body_icon .wrap .wrap_body .left .reg_item .input {
+  width: 298px;
+  height: 38px;
+  float: left;
+  border: 1px solid #ccc;
+  height: 18px;
+  line-height: 18px;
+  padding: 10px;
+}
+.body_icon .wrap .wrap_body .left .reg_item .icheck {
+  width: 160px;
+}
+.body_icon .wrap .wrap_body .left .reg_item .pcheck {
+  width: 188px;
+}
+.body_icon .wrap .wrap_body .left .reg_item .check_img {
+  float: left;
+  height: 28px;
+  width: 88px;
+  padding: 6px 5px;
+}
+.body_icon .wrap .wrap_body .left .reg_item .next {
+  float: left;
+  line-height: 40px;
+  color: #06c;
+}
+.body_icon .wrap .wrap_body .left .reg_item .get_code {
+  float: left;
+  height: 38px;
+  width: 98px;
+  border: 1px solid #DDDDDD;
+  background: #f8f8f8;
+  margin-left: 10px;
+  line-height: 38px;
+  text-align: center;
+  color: #666666;
+}
+.body_icon .wrap .wrap_body .left .reg_item .pass {
+  float: left;
+  background: url(../img/shopping/login-bg.png) 0 -82px no-repeat;
+  width: 16px;
+  height: 16px;
+  margin: 12px 0 0 10px;
+  display: none;
+}
+.body_icon .wrap .wrap_body .left .reg_tips {
+  height: 20px;
+  width: 500px;
+}
+.body_icon .wrap .wrap_body .left .reg_tips .error {
+  height: 20px;
+  color: #F03838;
+  display: none;
+  padding-left: 110px;
+}
+.body_icon .wrap .wrap_body .left .reg_tips .error em {
+  float: left;
+  background: url(../img/shopping/login-bg.png) 0 -56px no-repeat;
+  width: 16px;
+  height: 16px;
+  margin: 2px 6px 0 0;
+}
+.body_icon .wrap .wrap_body .left .reg_tips .error span {
+  height: 20px;
+  line-height: 20px;
+  float: left;
+}
+.body_icon .wrap .wrap_body .left .reg_tips .tip {
+  height: 20px;
+  padding-left: 110px;
+  color: #999999;
+  line-height: 20px;
+  display: none;
+}
+.body_icon .wrap .wrap_body .left label {
+  margin-left: 110px;
+  padding-top: 5px;
+  height: 24px;
+  line-height: 24px;
+  display: block;
+  font-size: 12px;
+}
+.body_icon .wrap .wrap_body .left label input {
+  float: left;
+  margin-right: 5px;
+  margin-top: 6px;
+}
+.body_icon .wrap .wrap_body .left label span {
+  float: left;
+  height: 24px;
+  line-height: 24px;
+  font-size: 12px;
+}
+.body_icon .wrap .wrap_body .left label a {
+  float: left;
+  line-height: 24px;
+  font-size: 12px;
+  color: #06c;
+}
+.body_icon .wrap .wrap_body .left .res_btn {
+  cursor: pointer;
+  width: 223px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  background: #e63c3f;
+  margin: 10px 0;
+  margin-left: 110px;
+  color: #fff;
+  font-size: 18px;
+  font-family: 微软雅黑;
+}
+.body_icon .wrap .wrap_body .right {
+  float: right;
+  width: 365px;
+  height: 285px;
+  margin-top: 50px;
+  background: url(../img/signin/cart-login.jpg) top no-repeat;
 }

@@ -53,18 +53,14 @@ body {
   width: 1200px;
   margin: 0 auto;
 }
-.banner_icon .banner_box {
+.banner_icon .swiper-container {
   width: 760px;
   height: 400px;
   margin-left: 210px;
-  overflow: hidden;
 }
-.banner_icon .banner_box .banner_img {
+.banner_icon .swiper-slide {
+  width: 760px;
   height: 400px;
-  width: 3800px;
-}
-.banner_icon .banner_box .banner_img li {
-  float: left;
 }
 
 .news {
@@ -78,8 +74,8 @@ body {
   margin: 0 auto;
   position: relative;
 }
-.news_icon .promotion {
-  width: 989px;
+.news_icon .swiper-container {
+  width: 759px;
   height: 118px;
   padding-left: 1px;
   margin: 1px 0 0 210px;
@@ -87,7 +83,11 @@ body {
   overflow: hidden;
   z-index: 966;
 }
-.news_icon .promotion .pro_fixed {
+.news_icon .swiper-container .swiper-slide {
+  height: 118px;
+  width: 252px;
+}
+.news_icon .pro_fixed {
   position: absolute;
   width: 230px;
   height: 118px;
@@ -96,16 +96,6 @@ body {
   top: 1px;
   overflow: hidden;
   z-index: 977;
-}
-.news_icon .promotion ul {
-  width: 1265px;
-  height: 118px;
-}
-.news_icon .promotion ul li {
-  float: left;
-  height: 118px;
-  width: 252px;
-  margin-right: 1px;
 }
 .news_icon .letters {
   position: absolute;
@@ -214,7 +204,8 @@ body {
   overflow: hidden;
 }
 .newgoods_icon .newgoods_body .body_left h2 a {
-  color: #666666;
+  color: #333333;
+  font-size: 16px;
 }
 .newgoods_icon .newgoods_body .body_left h2 a:hover {
   color: #F03838;
@@ -239,7 +230,7 @@ body {
   color: #f03838;
   line-height: 25px;
   font-size: 17px;
-  font-family: Impact,微软雅黑;
+  font-family: Impact, 微软雅黑;
   font-weight: 400;
   float: left;
 }
@@ -280,7 +271,8 @@ body {
   position: relative;
 }
 .newgoods_icon .newgoods_body .body_right li h2 a {
-  color: #666666;
+  color: #333333;
+  font-size: 16px;
 }
 .newgoods_icon .newgoods_body .body_right li h2 a:hover {
   color: #F03838;
@@ -304,7 +296,7 @@ body {
   line-height: 25px;
   margin: 15px 0;
   font-size: 17px;
-  font-family: Impact,微软雅黑;
+  font-family: Impact, 微软雅黑;
   font-weight: 400;
 }
 .newgoods_icon .newgoods_body .body_right li .buy {
@@ -538,7 +530,7 @@ body {
   font-family: Verdana;
   margin-top: -6px;
 }
-.stair .stair_bottom .center .centerlist ul li .tip_box a {
+.stair .stair_bottom .center .centerlist ul li .tip_box .shop_item {
   float: right;
   margin-top: -10px;
   background: url(../img/spriteSheet/index.png) 0 -688px no-repeat;
@@ -699,4 +691,159 @@ body {
   top: -154px;
   z-index: 200;
   opacity: 1;
+}
+
+.shopping {
+  position: fixed;
+  height: 100%;
+  width: 290px;
+  border-left: 2px solid #e6e6e6;
+  top: 0;
+  right: -500px;
+  z-index: 999;
+  background: white;
+}
+.shopping .shop_head {
+  height: 46px;
+  line-height: 46px;
+  background: #f0f0f0;
+}
+.shopping .shop_head b {
+  float: left;
+  font-family: 微软雅黑;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+.shopping .shop_head .shop_close {
+  float: right;
+  background: url(../img/spriteSheet/index.png) -62px -709px no-repeat;
+  width: 10px;
+  height: 9px;
+  margin: 19px;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+.shopping .shop_head .shop_close:hover {
+  transform: rotateZ(360deg);
+}
+.shopping .shop_body {
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 290px;
+}
+.shopping .shop_body .item_box {
+  width: 277px;
+  height: 85px;
+  border-bottom: 1px dashed #DDDDDD;
+}
+.shopping .shop_body .item_box img {
+  float: left;
+  height: 58px;
+  width: 58px;
+  border: 1px solid #DDDDDD;
+  margin: 13px;
+}
+.shopping .shop_body .item_box ul {
+  float: left;
+}
+.shopping .shop_body .item_box ul .shop_name {
+  padding-top: 13px;
+  padding-bottom: 20px;
+}
+.shopping .shop_body .item_box ul .shop_price {
+  height: 24px;
+}
+.shopping .shop_body .item_box ul .shop_price b {
+  float: left;
+  font-size: 12px;
+  line-height: 24px;
+  margin-right: 5px;
+  width: 60px;
+  color: #F03838;
+  font-weight: 700;
+}
+.shopping .shop_body .item_box ul .shop_price span {
+  float: left;
+  line-height: 24px;
+  margin-right: 5px;
+}
+.shopping .shop_body .item_box ul .shop_price .shop_btn {
+  float: left;
+}
+.shopping .shop_body .item_box ul .shop_price .shop_btn .shop_reduce {
+  float: left;
+  height: 22px;
+  width: 22px;
+  line-height: 22px;
+  border: 1px solid #ccc;
+  border-right: 0;
+  background: #F8F8F8;
+  text-align: center;
+}
+.shopping .shop_body .item_box ul .shop_price .shop_btn .shop_txt {
+  float: left;
+  height: 22px;
+  width: 28px;
+  border: 1px solid #ccc;
+  background: white;
+  text-align: center;
+  line-height: 22px;
+}
+.shopping .shop_body .item_box ul .shop_price .shop_btn .shop_add {
+  float: left;
+  height: 22px;
+  width: 22px;
+  line-height: 22px;
+  border: 1px solid #ccc;
+  border-left: 0;
+  background: #F8F8F8;
+  text-align: center;
+}
+.shopping .shop_body .item_box ul .shop_price .shop_delete {
+  float: left;
+  height: 24px;
+  width: 38px;
+  line-height: 24px;
+  text-align: center;
+  color: #2272c8;
+  cursor: pointer;
+  display: none;
+}
+.shopping .shop_foot {
+  height: 54px;
+  background: #f0f0f0;
+}
+.shopping .shop_foot .foot_left {
+  float: left;
+}
+.shopping .shop_foot .foot_left span {
+  display: block;
+  height: 27px;
+  line-height: 27px;
+  color: #666666;
+  padding-left: 10px;
+}
+.shopping .shop_foot .foot_left span b {
+  color: #F03838;
+}
+.shopping .shop_foot .foot_right a {
+  float: right;
+  border-radius: 3px;
+  text-align: center;
+  width: 96px;
+  height: 28px;
+  line-height: 28px;
+  color: #fff;
+  background: #f03838;
+  margin: 13px 10px;
+}
+
+.shop_item {
+  float: right;
+  margin-top: -10px;
+  background: url(../img/spriteSheet/index.png) 0 -688px no-repeat;
+  height: 36px;
+  width: 36px;
+  display: block;
 }

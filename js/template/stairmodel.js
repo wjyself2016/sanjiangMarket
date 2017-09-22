@@ -40,11 +40,11 @@ define([],function(){
 							<ul>
 							<% for(var j=0;j<data.bottom.center[i].length;j++){ %>
 								<li>
-									<a class="img_box" href="#"><img src="<%=data.bottom.center[i][j].img%>"></a>
+									<a class="img_box" href="details.html?listId=<%=data.bottom.center[i][j].listId%>"><img src="<%=data.bottom.center[i][j].img%>"></a>
 									<h2><a href="#"><%=data.bottom.center[i][j].name%></a></h2>
 									<div class="tip_box">
 										<b><%=data.bottom.center[i][j].price%></b>
-										<a href="#"></a>
+										<a href="javascript:;" class="shop_item"></a>
 									</div>
 								</li>
 							<%}%>

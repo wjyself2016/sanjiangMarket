@@ -7,7 +7,8 @@
 		<link href="../img/index/favicon.ico" rel="icon" type="image/x-icon" />
 		<link rel="stylesheet" href="../css/index.css" />
 		<link rel="stylesheet" href="../css/common.css" />
-		<script data-main="../js/private/index.js" src="../js/library/require.js" ></script>
+		<link rel="stylesheet" href="../css/swiper.min.css" />
+		<script data-main="../js/private/index.js" src="../js/library/require.js"></script>
 	</head>
 
 	<body>
@@ -16,14 +17,19 @@
 		<!--轮播图-->
 		<div class="banner">
 			<div class="banner_icon">
-				<div class="banner_box">
-					<ul class="banner_img">
-						<li><a href="#"><img src="../img/index/banner01.jpg"></a></li>
-						<li><a href="#"><img src="../img/index/banner02.jpg"></a></li>
-						<li><a href="#"><img src="../img/index/banner03.jpg"></a></li>
-						<li><a href="#"><img src="../img/index/banner04.jpg"></a></li>
-						<li><a href="#"><img src="../img/index/banner05.jpg"></a></li>
-					</ul>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"></div>
+						<div class="swiper-slide"></div>
+						<div class="swiper-slide"></div>
+						<div class="swiper-slide"></div>
+						<div class="swiper-slide"></div>
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+					<!-- Add Arrows -->
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
 				</div>
 			</div>
 		</div>
@@ -33,25 +39,34 @@
 				<!--短讯-->
 				<div class="letters">
 					<div class="letters_list">
-						<div class="letters_list_title"><span>三江快报</span><a href="#">更多&gt;</a></div>
+						<div class="letters_list_title"><span>三江快报</span>
+							<a href="#">更多&gt;</a>
+						</div>
 						<ul>
-							<li><a href="#">吐血大甩卖啊！！！！！</a></li>
+							<li>
+								<a href="#">吐血大甩卖啊！！！！！</a>
+							</li>
 						</ul>
 					</div>
 					<div class="letters_img"></div>
 				</div>
 				<!--促销广告-->
-				<div class="promotion">
-					<ul class="pro_list">
-						<li><a href="#"><img src="../img/index/pro01.png"></a></li>
-						<li><a href="#"><img src="../img/index/pro02.jpg"></a></li>
-						<li><a href="#"><img src="../img/index/pro03.jpg"></a></li>
-						<li><a href="#"><img src="../img/index/pro04.jpg"></a></li>
-						<li><a href="#"><img src="../img/index/pro05.jpg"></a></li>
-					</ul>
-					<div class="pro_fixed"><a href="#"><img src="../img/index/pro_fixed.png"></a></div>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"></div>
+						<div class="swiper-slide"></div>
+						<div class="swiper-slide"></div>
+						<div class="swiper-slide"></div>
+						<div class="swiper-slide"></div>
+					</div>
+					<!-- Add Arrows -->
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
 				</div>
-			</div>			
+				<div class="pro_fixed">
+					<a href="#"><img src="../img/index/pro_fixed.png"></a>
+				</div>
+			</div>
 		</div>
 		<!--热销好货-->
 		<div class="newgoods">
@@ -64,18 +79,101 @@
 					</h2>
 				</div>
 				<div class="newgoods_body">
-					
+					<div class="body_left">
+						<h2><a href="#">长鼻王膨化夹心卷(蛋黄口味)420克</a></h2>
+						<div class="tip">长鼻好味道</div>
+						<div class="price">
+							<b>￥21.50</b>
+							<a href="#">点击购买&gt;</a>
+						</div>
+						<a href="#"><img src="../img/index/hotgoods1.jpg"></a>
+					</div>
+					<ul class="body_right">
+
+						<li>
+							<h2><a href="details.html?listId=0">娃哈哈桂圆莲子营养八宝粥360克</a></h2>
+							<div class="tip">经典好味道</div>
+							<b>￥3.65</b>
+							<a class="buy" href="#">点击购买&gt;</a>
+							<a href="#"><img src="../img/index/hotgoods2.jpg"></a>
+						</li>
+
+						<li>
+							<h2><a href="details.html?listId=1">老李五香翅75克</a></h2>
+							<div class="tip">老李飘香鸡翅</div>
+							<b>￥9.38</b>
+							<a class="buy" href="#">点击购买&gt;</a>
+							<a href="#"><img src="../img/index/hotgoods3.jpg"></a>
+						</li>
+
+						<li>
+							<h2><a href="#">麦初心语慕斯蛋糕牛奶味375克</a></h2>
+							<div class="tip">柔软细腻蛋糕体</div>
+							<b>￥13.80</b>
+							<a class="buy" href="#">点击购买&gt;</a>
+							<a href="#"><img src="../img/index/hotgoods4.jpg"></a>
+						</li>
+
+						<li>
+							<h2><a href="#">金味营养麦片600克</a></h2>
+							<div class="tip">金味醇香麦片</div>
+							<b>￥26.80</b>
+							<a class="buy" href="#">点击购买&gt;</a>
+							<a href="#"><img src="../img/index/hotgoods5.jpg"></a>
+						</li>
+
+						<li>
+							<h2><a href="#">黑人天然双重薄荷含氟牙膏225克</a></h2>
+							<div class="tip">低价大容量</div>
+							<b>￥13.70</b>
+							<a class="buy" href="#">点击购买&gt;</a>
+							<a href="#"><img src="../img/index/hotgoods6.jpg"></a>
+						</li>
+
+						<li>
+							<h2><a href="#">臻富100%脐橙汁1千克</a></h2>
+							<div class="tip">100%脐橙汁</div>
+							<b>￥13.90</b>
+							<a class="buy" href="#">点击购买&gt;</a>
+							<a href="#"><img src="../img/index/hotgoods7.jpg"></a>
+						</li>
+
+						<li>
+							<h2><a href="#">清风原木纯品抽取式面巾纸180抽*6包</a></h2>
+							<div class="tip">源于纯净归于健康</div>
+							<b>￥16.80</b>
+							<a class="buy" href="#">点击购买&gt;</a>
+							<a href="#"><img src="../img/index/hotgoods8.jpg"></a>
+						</li>
+
+						<li>
+							<h2><a href="#">加多宝凉茶(植物饮料)310ml*24</a></h2>
+							<div class="tip">清火好凉茶</div>
+							<b>￥74.80</b>
+							<a class="buy" href="#">点击购买&gt;</a>
+							<a href="#"><img src="../img/index/hotgoods9.jpg"></a>
+						</li>
+						
+					</ul>
 				</div>
 			</div>
 		</div>
 		<!--四大入口-->
 		<div class="four_enter">
 			<div class="four_enter_icon">
-				<div class="enter_box1"><a href="#"><img src="../img/index/enter01.jpg"></a></div>
-				<div class="enter_box2"><a href="#"><img src="../img/index/enter02.jpg"></a></div>
-				<div class="enter_box3"><a href="#"><img src="../img/index/enter03.jpg"></a></div>
-				<div class="enter_box4"><a href="#"><img src="../img/index/enter04.png"></a></div>
-			
+				<div class="enter_box1">
+					<a href="#"><img src="../img/index/enter01.jpg"></a>
+				</div>
+				<div class="enter_box2">
+					<a href="#"><img src="../img/index/enter02.jpg"></a>
+				</div>
+				<div class="enter_box3">
+					<a href="#"><img src="../img/index/enter03.jpg"></a>
+				</div>
+				<div class="enter_box4">
+					<a href="#"><img src="../img/index/enter04.png"></a>
+				</div>
+
 			</div>
 		</div>
 		<!--楼梯外边距-->
@@ -99,7 +197,7 @@
 			<!--楼梯9-->
 			<div class="stair"></div>
 		</div>
-		
+
 		<!--左侧固定导航-->
 		<div class="left_nav">
 			<ul>
@@ -169,8 +267,41 @@
 				</div>
 			</div>
 		</div>
+		<!--右侧购物车-->
+		<div class="shopping">
+			<div class="shop_head">
+				<b>我的购物车</b>
+				<a href="javascript:;" class="shop_close"></a>
+			</div>
+			<div class="shop_body">
+				<!--<div class="item_box">
+					<img src="../img/index/center1.jpg">
+					<ul>
+						<li class="shop_name"><a href="javascript:;">上好佳虾片</a></li>
+						<li class="shop_price">
+							<b>￥0.95</b>
+							<span>x</span>
+							<div class="shop_btn">
+								<div class="shop_reduce">-</div>
+								<input type="text" value="1" class="shop_txt"/>
+								<div class="shop_add">+</div>
+							</div>
+							<div class="shop_delete">删除</div>
+						</li>
+					</ul>
+				</div>-->
+			</div>
+			<div class="shop_foot">
+				<div class="foot_left">
+					<span>共<b></b>件商品</span>
+					<span>共计<b></b></span>
+				</div>
+				<div class="foot_right"><a href="shopping.html">去购物车结算&gt;</a></div>
+			</div>
+		</div>
 		<!--脚部-->
 		<div id="foot"></div>
-		
+
 	</body>
+
 </html>
